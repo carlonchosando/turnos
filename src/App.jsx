@@ -7,13 +7,13 @@ import ListadoPacientes from "./component/ListadoPacientes";
 function App() {  
 
   return (
-    <div className="conteiner mx-">
+    <>
       <Header/>
 
       <Formulario/>
       <ListadoPacientes/>
       <Footer/>
-    </div>
+    </>
   )
 }
 
