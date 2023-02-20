@@ -2,7 +2,9 @@
 function Header() {
     return (
         <header>
-            <h1 className="text-4xl font-bold"  >Desde Cabecera</h1>
+            <h1 className="text-3xl font-bold text-center md:w-2/3 mx-auto ">Seguimiento Pacientes{" "}
+                <span className="text-indigo-600">Veterinaria</span>
+            </h1>
         </header>
     )
 }

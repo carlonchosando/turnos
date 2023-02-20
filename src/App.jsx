@@ -9,9 +9,10 @@ function App() {
   return (
     <>
       <Header />
-
-      <Formulario />
-      <ListadoPacientes />
+      <div className="mt-12 md:flex ">
+        <Formulario />
+        <ListadoPacientes />
+      </div>
       <Footer />
     </>
   )
