@@ -4,15 +4,15 @@ import Formulario from "./component/Formulario";
 import ListadoPacientes from "./component/ListadoPacientes";
 
 
-function App() {  
+function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
 
-      <Formulario/>
-      <ListadoPacientes/>
-      <Footer/>
+      <Formulario />
+      <ListadoPacientes />
+      <Footer />
     </>
   )
 }
