@@ -2,9 +2,9 @@ import React from 'react'
 
 const ListadoPacientes = () => {
   return (
-    <section className='md:w-1/2 lg:w-3/5 ' >
-      <h2>Listado Pacientes</h2>
-    </section>
+    <div className='md:w-1/2 lg:w-3/5' >
+      <h2 className="font-black text-3xl text-center">Listado Pacientes</h2>
+    </div>
   )
 }
 

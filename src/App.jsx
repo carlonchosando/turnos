@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="mt-12 md:flex ">
+      <div className="mt-12 md:flex">
         <Formulario />
         <ListadoPacientes />
       </div>
