@@ -7,9 +7,17 @@ const ListadoPacientes = () => {
       <p className='text-lg mt-5 mb-10 text-center'>
         Administra tus {' '}
         <span className='text-indigo-600 font-bold'>Pacientes y Citas</span>
-
       </p>
+      <div className='bg-white shadow-lg rounded-lg py-10 px-5 mt-10'>        
+          <label           
+            className=' text-gray-700 uppercase font-bold'>
+            Nombre: {' '}
+            <p className=' text-normal '>Carlos</p>
+          </label>
+      </div>
+
     </div>
+
   )
 }
 

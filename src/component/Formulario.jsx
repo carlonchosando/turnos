@@ -23,6 +23,32 @@ const Formulario = () => {
         </div>
 
         <div className='mb-5'>
+        <label
+            htmlFor='propietario'
+            className='block text-gray-700 uppercase font-bold'>
+            Nombre del Propietario
+          </label>
+          <input
+            id='propietario'
+            type='text'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'            
+            placeholder='Nombre del Propietario' />
+        </div>
+
+        <div className='mb-5'>
+          <label
+            htmlFor='email'
+            className='block text-gray-700 uppercase font-bold'>
+            e-mail
+          </label>
+          <input
+            id='email'
+            type='email'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            placeholder='correo@correo.com' />
+        </div>
+
+        <div className='mb-5'>
           <label
             htmlFor='alta'
             className='block text-gray-700 uppercase font-bold'>
