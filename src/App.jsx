@@ -3,6 +3,7 @@ import Footer from "./component/Footer";
 import Formulario from "./component/Formulario";
 import ListadoPacientes from "./component/ListadoPacientes";
 
+const [pacientes, setPacientes] = useState([]);
 
 function App() {
 
