@@ -1,12 +1,13 @@
+import {useState, useEffect } from "react";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import Formulario from "./component/Formulario";
 import ListadoPacientes from "./component/ListadoPacientes";
 
-const [pacientes, setPacientes] = useState([]);
+
 
 function App() {
-
+  const [pacientes, setPacientes] = useState([]);
   return (
     <>
       <Header />

@@ -40,9 +40,9 @@ const Formulario = () => {
         onSubmit={handleSubmit}
         className='bg-white shadow-lg rounded-lg py-10 px-5 mt-10 mx-5'>          
         
-        {  // Mostrar el mensaje de error
-        error &&
-         <div className='bg-red-700  text-center text-xl font-bold p-2 rounded-lg shadow-lg mb-5 text-white' >
+        {error &&  // Mostrar el mensaje de error        
+         <div className='bg-red-700  text-center text-xl font-bold p-2 rounded-lg
+         shadow-lg mb-5 text-white' >
             <p>Todos los campos son obligatorios !</p>
          </div>
          }
@@ -51,13 +51,13 @@ const Formulario = () => {
           <label
             htmlFor='nombre'
             className='block text-gray-700 uppercase font-bold'>
-            Nombre de la Mascota
+            Mascota
           </label>
           <input
             id='nombre'
             type='text'
             className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
-            placeholder='Nombre de la Mascota'
+            placeholder='Ingrese Nombre de la Mascota'
             value={nombre}
             onChange={e => setNombre(e.target.value)}
           />
