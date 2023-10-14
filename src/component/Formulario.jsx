@@ -1,28 +1,39 @@
 import { useState, useEffect } from 'react';
 
-const Formulario = () => {
-  // State para los campos del formulario
+const Formulario = ({pacientes, setPacientes}) => {  
   const [nombre, setNombre] = useState('');
   const [propietario, setPropietario] = useState('');
   const [email, setEmail] = useState('');
   const [alta, setAlta] = useState('');
   const [sintomas, setSintomas] = useState('');
-  // fin del state para los campos del formulario
-
   // State para el error, falta de campos
   const [error, setError] = useState(false);
-
   
   const handleSubmit = e => {
-    e.preventDefault();// prevenir la accion por defecto del formulario
-
-    // Validacion de los campos del formulario
+    e.preventDefault();   
     if ([nombre, propietario, email, alta, sintomas].includes('')) {
       setError(true)
       return;
     }
     setError(false)    
-  };// fin de la validacion de los campos del formulario
+
+    const objetoPaciente = {
+      nombre,
+      propietario,
+      email,
+      alta,
+      sintomas
+    }
+    
+    setPacientes([...pacientes, objetoPaciente])
+   
+    setNombre('');
+    setPropietario('');
+    setEmail('');
+    setAlta('');
+    setSintomas('');
+
+  };
 
 
   return (
@@ -131,6 +142,7 @@ const Formulario = () => {
           type='submit'
           className='bg-indigo-600 w-full p-3 text-white uppercase font-bold rounded-md hover:bg-indigo-800 cursor-pointer transition-all'
           value='Agregar Paciente'
+          onClick={handleSubmit}
         />
       </form>
     </div>
